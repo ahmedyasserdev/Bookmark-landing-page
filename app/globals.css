@@ -121,6 +121,9 @@ body {
   .h4-medium {
     @apply font-medium text-[32px] leading-[40px];
   }
+  .h4-bold {
+    @apply font-bold text-[32px] leading-[40px];
+  }
 
   /* 28 */
   .h5-bold {
@@ -202,7 +205,7 @@ body {
   }
 
   .section_padding {
-    @apply py-[80px] lg:py-[120px];
+    @apply py-[70px] lg:py-[100px];
   }
 }
 
