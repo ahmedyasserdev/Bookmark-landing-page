@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/shared/Header";
-import Template from "./template";
 
 
 
@@ -20,12 +19,10 @@ export default function RootLayout({
       <body >
         <div className="flex flex-col min-h-screen container" >
       <Header />
-      <Template>
 
         <main className="flex-1" >
         {children}
         </main>
-      </Template>
 
 
         </div>
