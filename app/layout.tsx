@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
 
 
 
@@ -24,7 +25,7 @@ export default function RootLayout({
         {children}
         </main>
 
-
+      <Footer />
         </div>
 
       </body>

@@ -34,7 +34,7 @@ const FAQ = () => {
           </Accordion>
         ))}
       
-            <Button>More Info</Button>
+            <Button  >More Info</Button>
       </div>
 
 

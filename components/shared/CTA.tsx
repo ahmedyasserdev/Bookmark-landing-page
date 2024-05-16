@@ -46,7 +46,7 @@ const CTA = () => {
 
                                           <Image  src = {'/images/bg-dots.svg'} alt= {"dots"} width={300} height={100} />
 
-                                        <Button >{browser.action}</Button>
+                                        <Button className = "hover:bg-white hover:border-2 hover:border-primary  hover:text-primary transition-all duration-150" >{browser.action}</Button>
                             </motion.div>
                         ))
                     }
