@@ -46,3 +46,28 @@ export   const variantsX = {
     }
   ];
   
+
+
+  export const cta = [
+    {
+      image : "/images/logo-chrome.svg" ,
+      browser: "Chrome",
+      minVersion: " Minimum version 62",
+      action: "Add & Install Extension",
+    },
+    {
+      image : "/images/logo-firefox.svg" ,
+
+      browser: "Firefox",
+      minVersion: " Minimum version 55",
+      action: "Add & Install Extension",
+    },
+    {
+      image : "/images/logo-opera.svg" ,
+
+      browser: "Opera",
+      minVersion: " Minimum version 46",
+      action: "Add & Install Extension",
+    },
+  ];
+  

@@ -58,7 +58,7 @@ const config = {
       },
 
       backgroundImage : {
-        hero : "/images/"
+        dots : "/images/bg-dots.svg"
       },
 
       borderRadius: {
