@@ -213,4 +213,8 @@ body {
   .nav_link {
     @apply p-regular-16  text-white max-lg:border-b border-secondary-blue  lg:text-secondary-darkBlue uppercase lg:hover:text-primary-red transition-colors duration-150  text-center tracking-wider  max-lg:w-[70%] max-lg:pb-4;
   }
+
+  section {
+    @apply container
+  }
 }

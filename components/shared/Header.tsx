@@ -9,7 +9,7 @@ import MobileNav from './MobileNav'
 import { motion } from "framer-motion";
 const Header = () => {
   return (
-    <motion.header className='flex-between relative py-7' 
+    <motion.header className='flex-between relative py-7  container' 
     initial={{ opacity: 0, y: -20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.7 }}

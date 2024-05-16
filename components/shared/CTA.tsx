@@ -1,9 +1,12 @@
-import { cta } from '@/constants'
+'use client'
+import { cta, variantsX } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
-
+import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import {motion } from "framer-motion"
 const CTA = () => {
+    const { ref, controls, delay } = useScrollAnimation();
   return (
     <section className = "section_padding">
             <div className="flex-center flex-col gap-4">
@@ -22,12 +25,18 @@ const CTA = () => {
                     
                     {
                         cta.map((browser , i) => (
-                            <div key = {browser.image} className={`flex flex-col gap-5 items-center shadow-lg  px-6 py-8 
+                            <motion.div key = {browser.image} className={`flex flex-col gap-5 items-center shadow-lg  px-6 py-8 
                                     ${i === 1 && "lg:mt-[80px]" }
-                                    ${i === 2 && "lg:mt-[100px]" }
+                                    ${i === 2 && "lg:mt-[120px]" }
+                            `} 
                             
+                            ref={ref}
+                            initial="hidden"
+                            animate={controls}
+                            variants={variantsX}
+                            transition={{ duration: 0.8 }}
                             
-                            `} >
+                            >
                                 <Image  src = {browser.image} alt= {browser.browser} width={100} height={100} className="object-contain"  />
                                           <div>
                                               <h5 className='p-bold-20 whitespace-nowrap text-secondary-darkBlue'>Add To {browser.browser}</h5>
@@ -38,7 +47,7 @@ const CTA = () => {
                                           <Image  src = {'/images/bg-dots.svg'} alt= {"dots"} width={300} height={100} />
 
                                         <Button >{browser.action}</Button>
-                            </div>
+                            </motion.div>
                         ))
                     }
 
