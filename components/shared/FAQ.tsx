@@ -13,7 +13,7 @@ const FAQ = () => {
   return (
     <section className="section_padding">
       <div className="flex-center flex-col gap-4">
-        <h2 className=" h3-bold md:h2-bold text-secondary-darkBlue whitespace-nowrap">
+        <h2 className=" h3-bold md:h2-bold text-secondary-darkBlue ">
           Frequently Asked Questions
         </h2>
         <p className="p-medium-18 text-secondary-blue max-w-xl text-center">
