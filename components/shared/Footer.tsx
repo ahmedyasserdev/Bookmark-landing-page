@@ -20,8 +20,8 @@ const Footer = () => {
                 </h2>
 
 
-                <div className="flex items-center gap-4 flex-wrap">
-                    <Input className='min-w-[300px] focus-visible:ring-offset-0 border-none focus-visible:ring-transparent  focus:outline-none'  />
+                <div className="flex-center gap-4 flex-wrap">
+                    <Input className='w-[300px] focus-visible:ring-offset-0 border-none focus-visible:ring-transparent  focus:outline-none'  />
                     <Button className='bg-primary-red hover:bg-white hover:border-primary-red hover:border-2 transition-all duration-150 hover:text-primary-red'>Contact Us</Button>
                 </div>
 
