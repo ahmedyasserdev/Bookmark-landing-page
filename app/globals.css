@@ -74,7 +74,7 @@ body {
 
 @layer utilities {
   .container {
-    @apply max-w-[85%] mx-auto overflow-hidden;
+    @apply max-w-[90%] mx-auto overflow-hidden;
   }
 
   .flex-center {
